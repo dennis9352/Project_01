@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Today's Mood_Detail</title>
+</head>
+<body>
+<header>
+    <div class="home">
+        <h1>TODAY'S MOOD</h1>
+    </div>
+</header>
+<section>
+    <div class="part1">
+        <form action="modifyOk" method="post" name="frm">
+            <table>
+                <caption>WHAT'S YOUR MOOD TODAY</caption>
+                <tr>
+                    <th>
+                        DATE
+                    </th>
+                    <td>
+                        <input type="date" name="cal" value="${cal}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        MOOD
+                    </th>
+                    <td>
+                        <select class="emo" name="mood" value="">
+                            <option>HAPPY</option>
+                            <option>SAD</option>
+                            <option>ANGRY</option>
+                            <option>BOARD</option>
+                            <option>EXCITING</option>
+                            <option>SO SO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        WEATHER
+                    </th>
+                    <td>
+                        <select class="weather" name="weather">
+                            <option>SUNNY</option>
+                            <option>FOGGY</option>
+                            <option>RAINY</option>
+                            <option>CLOUDY</option>
+                            <option>SNOWY</option>
+                            <option>WINDY</option>
+                            <option>COOL</option>
+                            <option>HOT</option>
+                            <option>STORMY</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        ATTACHED FILE
+                    </th>
+                    <td>
+                        <input type="file" name="file" accept="image/png, image/jpg" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        CONTENT
+                    </th>
+                    <td>
+                        <textarea cols="50" rows="30" name="content" value=""></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="MODIFY" />
+                        <input type="button" value="DELETE" onclick="del()" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</section>
+<footer>
+    <h6>
+
+    </h6>
+</footer>
+</body>
+</html>
